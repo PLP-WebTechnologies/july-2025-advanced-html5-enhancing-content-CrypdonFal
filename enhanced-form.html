@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+</head>
+<body>
+    <h1> My Favorite Hobbies and Daily Routine</h1>
+    <h2> My Hobbies</h2>
+    <ul>
+        <li>Reading books📚 <img src="images/ionela-mat-VFEc5gPrLgg-unsplash.jpg" alt="Reading Books" width="120"></li>
+        <li>Playing the guitar <img src="images/maxim-fiyavchuk-eYOvPmo2IBc-unsplash.jpg" alt="Playing the guitar" width="100"></li>
+        <li>Cooking new recipes🍳 <img src="images/gaelle-marcel-GaLWM8dX73U-unsplash.jpg" alt="Cooking" width="120"></li>
+        <li>Photography <img src="images/bailey-mahon-2b6K4uy0Hbc-unsplash.jpg" alt="Photography" width="100"></li>
+    </ul>
+
+    <h2> My Daily Routine</h2>
+    <ol>
+        <li>Wake up around 6am to pray</li>
+        <li>Exercise for 30 minutes</li>
+        <li>Have a healthy student breakfast</li>
+        <li>Start work or study</li>
+        <li>Take short breaks to relax</li>
+        <li>Have lunch around noon</li>
+        <li>Continue with work or study</li>
+        <li>Wrap up the day and plan for tomorrow</li>
+    </ol>
+
+    <p>Thank you for taking the time to learn about my hobbies, however these hobbies do not come cheap <br>lets take a look at my hobby expenses:</p>
+    <h2>My Hobby Equipment and Costs</h2>
+   
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hobby</th>
+                <th>Equipment</th>
+                <th> Estimated Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Reading books📚</td>
+                <td>Bookshelf, Books</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Playing the guitar🎸</td>
+                <td>Acoustic Guitar, Picks</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Photography📸</td>
+                <td>Camera, Lenses</td>
+                <td>$500</td>
+            </tr>
+        </tbody>
+    </table>
+
+<h2>Join My Hobby Club</h2>
+<p>If you're interested in any of these hobbies, consider joining my hobby club! To do that fill out the form below. <br> Note: We meet every weekend to share tips, resources, and enjoy our passions together.</p>
+<form action="##" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="Fullname">Full Name:</label>
+        <input type="text" id="Fullname" name="Fullname" required minlength="5"> <br><br>
+       
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" required placeholder="example@email.com"> <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678"> <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Hobby Preferences</legend>
+        <label for="hobby">Favorite Hobby:</label>
+        <select id="hobby" name="hobby" required>
+            <option value="reading">Reading Books</option>
+            <option value="guitar">Playing the Guitar</option>
+            <option value="cooking">Cooking New Recipes</option>
+            <option value="photography">Photography</option>
+        </select><br><br>
+
+        <label for="experience">Experience Level:</label>
+        <input type="range" id="experience" name="experience" min="1" max="10" required>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="5" cols="50" placeholder="Tell us more about yourself..." required></textarea>
+
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the terms and conditions
+        </label>
+    </fieldset>
+    <button type="submit">Join Now</button>
+</form>
+</body>
+</html>
